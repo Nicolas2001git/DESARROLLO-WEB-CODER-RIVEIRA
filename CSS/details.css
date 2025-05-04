@@ -1,0 +1,530 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo de los titulos */
+h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Tamaño del grosor del texto */
+    font-style: normal;
+    font-size: 80px; /* tamaño de fuente*/
+    text-align: center; /* Centra el texto */
+    color: black;
+    background-color: white;
+}
+
+/* Estilos de main */
+main{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid-enlaces-header-todos {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* 4 columnas */
+    column-gap: 20px; /* espacio entre los enlaces */
+    list-style: none;
+    padding: 30px;
+    background-color: #9f9c9cfd;
+    justify-content: center; /* centra el grupo de enlaces */
+    align-items: center;
+    font-family: "Caveat", cursive;
+}
+
+/* Estilo para logo */
+.web-creator:hover{
+    outline: 5px dashed blue;
+}
+
+/* Estilo para los enlaces en lista */
+.grid-enlaces-header-todos li a {
+    padding: 10px;
+    background-color: white;
+    color: brown;
+    text-align: center;
+    border: 3px solid gray;
+    border-radius: 1000px;
+    text-decoration: none;
+    font-size: 40px;
+}
+.grid-enlaces-header-todos li a:hover {
+    background-color: violet;
+    color: white;
+}
+  
+
+
+/* Estilo para testimonios */
+.testimonio-1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 30px;
+    background-color: #f4f1ee; 
+    color: #3b2c2a; 
+    text-align: end;
+    border: 3px solid #a25633; 
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 1000px;
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 800px ;
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+    width: 900px;
+    height: 150px;
+    margin: 20px;
+}
+.testimonio-2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    background-color: #f4f1ee; 
+    color: #3b2c2a; 
+    text-align: center;
+    border: 3px solid rgb(162, 49, 49); 
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 600px;
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+    width: 900px;
+    height: 150px;
+    margin: 20px 20px 20px auto;
+  
+}
+.testimonio-1:hover, .testimonio-2:hover{
+    background-color: #e1dcd8; 
+    border-color: #3b2c2a; 
+    color: blue;
+}
+.proyecto-imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "imagen-1 imagen-2"
+        "imagen-3 imagen-4";
+    gap: 10px;
+    background-color:  #e2e8f0;
+    margin-bottom: 60px;
+}
+.proyecto-imagenes img {
+    border: 5px solid #501a1a;
+    border-radius: 100px;
+    background-color: #f5f7fa;
+    width: 900px;
+    height: 900px;
+    margin-left: 5px;
+}
+.imagen-1 {
+    grid-area: imagen-1;
+}
+.imagen-2 {
+    grid-area: imagen-2;
+}
+.imagen-3 {
+    grid-area: imagen-3;
+}
+.imagen-4 {
+    grid-area: imagen-4;
+}
+
+.imagen-1:hover,.imagen-2:hover,.imagen-3:hover,.imagen-4:hover{
+    border: 5px solid blue; 
+}
+
+.proyecto-videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "video-1 video-2";
+    gap: 10px;
+    background-color:#e2e8f0;
+    margin-top: 20p;
+}
+.proyecto-videos video{
+    margin-left: 30px;
+    border-radius: 50px;
+    border: 5px solid #501a1a;
+    border-radius: 100px;
+    background-color: #f5f7fa;
+}
+
+.video-1:hover,
+.video-2:hover {
+  border: 5px solid blue; 
+}
+.video-1 {
+    grid-area: video-1;
+}
+.video-2 {
+    grid-area: video-2;
+}
+
+
+/* Estilo general de listas <ul> */
+ul{
+    display: flex;
+    list-style: none; /* Elimina las viñetas/círculos */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 52px;
+    background-color: #9f9c9cfd;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilo de los enlaces */
+a{
+    text-decoration: none; /* Elimina subrayado */
+    color: brown;
+}
+
+/* Estilo para los enlaces dentro de listas */
+li a{
+    display: flex;
+    flex-direction: row; /* Elementos en fila */
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 100px;
+}
+
+/* Estilo de los párrafos */
+p{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Estilo para recibir novedades */
+.suscripción:hover{
+    color:  #1d4ed8;
+}
+.suscripción:focus-within label {
+    color:  #1d4ed8; 
+    font-weight: bold; 
+}
+.suscribirse {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 60px;
+    font-style: normal;
+}
+
+/* Estilo telefono */
+.telefono{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 700px;
+    font-size: 40px;
+    color:  #475569;
+}
+
+.telefono:hover{
+    color: #2563eb;
+}
+/* Estilo mail */
+.mail{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 700px;
+    font-size: 40px;
+    color:  #475569;
+}
+.mail:hover{
+    color:  #2563eb;
+}
+/* Estilo para los campos de formularios */
+
+.el-formulario div:hover label{
+    color:  #1d4ed8;
+    text-decoration: underline;
+}  
+.formulario{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal; 
+}
+input, textarea, select {
+    font-size: 20px;
+    border: 5px ridge rgba(17, 14, 18, 0.6);
+    outline: none;
+    padding: 5px;  
+}
+.formulario:focus{
+    background: #f0f8ff;  
+    color: #333;       
+}   
+.mensaje{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+}
+.mensaje:focus{
+    background: #f0f8ff;  
+    color: #333;         
+}
+.tipo-de-usuario{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+}
+.opciones{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+    border: 5px ridge rgba(17, 14, 18, 0.6);
+    outline: none; 
+}
+.opciones:focus{
+    background: #f0f8ff;  
+    color: #333;        
+}
+.boton-enviar {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    width: 150px;
+    border: 10px ridge rgba(170, 50, 220, 0.6);
+    outline: none; 
+}
+.boton-enviar:hover {
+    color: #1d4ed8;
+}
+.boton-enviar:focus {
+    background: #f0f8ff;
+    color: #333;
+    box-shadow: 0 0 8px rgba(29, 78, 216, 0.8);
+}
+
+/* Estilo para subtítulo */
+h2{
+    list-style: none;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600px;
+    font-style: normal;
+    font-size: 65px;
+    text-align: center;
+}
+
+/* Estilo para lista de servicios*/
+.servicios-columnas{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "servicio-1 servicio-2"
+    "servicio-3 servicio-4";
+    gap: 20px;
+    border: 5px solid #2563eb;
+
+}
+.servicio-1 {
+    grid-area: servicio-1;
+    background-color: #f5f7fa;
+    border: 5px solid #2563eb;
+}
+.servicio-2 {
+    grid-area: servicio-2;
+    background-color: #f5f7fa;
+    border: 5px solid #2563eb;
+}
+.servicio-3 {
+    grid-area: servicio-3;
+    background-color: #f5f7fa;
+    border: 5px solid #2563eb;
+}
+.servicio-4{
+    grid-area: servicio-4;
+    background-color: #f5f7fa;
+    border:5px solid #2563eb;
+
+}
+.servicio-1:hover,.servicio-2:hover,.servicio-3:hover,.servicio-4:hover{
+    color: #1d4ed8;
+} 
+/* Estilo para preguntas frecuentes */
+.accordion-header {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+}
+
+.accordion-button,
+.accordion-body {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+}
+/* Estilo del pie de página */
+footer {
+    background-color: gray;
+    color: brown; 
+    text-align: center;
+    padding: 30px 0px;
+    font-family: "Caveat", cursive;
+}
+
+/* Estilo para imágenes del footer */
+footer img {
+    width: 40px;
+    margin: 0 5px;
+    align-items: middle;
+}
+
+/* Estilo para video */
+video{
+    margin-top: 20px;
+}
+
+/* ESTILOS PARA CELULAR 768 PX*/
+@media (max-width: 576px) {
+h1 {
+  font-size: 36px;
+}
+  
+h2,
+.formulario,
+.mensaje,
+.tipo-de-usuario,
+.opciones,
+.suscribirse {
+  font-size: 22px;
+}
+  
+p {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+  
+.grid-enlaces-header-todos {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 10px;
+}
+  
+.grid-enlaces-header-todos li a {
+    font-size: 22px;
+    padding: 8px;
+    align-items: center;     
+    justify-content: center; 
+    margin: 0px;
+}
+
+.web-creator{
+    width: 300px;
+    height: 300px;
+}
+  
+.testimonio-1,
+.testimonio-2 {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    font-size: 24px;
+    margin: 10px auto;
+    text-align: center;
+}
+  
+.proyecto-imagenes {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "imagen-1"
+    "imagen-2"
+    "imagen-3"
+    "imagen-4";
+}
+  
+.proyecto-imagenes img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.proyecto-videos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "video-1"
+    "video-2";
+}
+.proyecto-videos video {
+  width: 90%;
+  margin: auto;
+}
+.servicios-columnas {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "servicio-1"
+    "servicio-2"
+    "servicio-3"
+    "servicio-4";
+}
+.servicio-1,
+.servicio-2,
+.servicio-3,
+.servicio-4 {
+    font-size: 24px;
+    padding: 10px;   
+}
+.boton-enviar {
+    font-size: 22px;
+    width: 100%;
+}
+.telefono{
+    font-size: 20px;
+}
+.mail{
+    font-size: 20px;
+}
+input,    
+textarea,
+select {
+    width: 93%;
+    font-size: 19px;
+}
+footer {
+  font-size: 20px;
+  padding: 20px;
+}
+footer img {
+  width: 30px;
+}
+.equipo-trabajando{
+    width: 300px;
+    height: 300px;
+}
+.preguntas{
+    font-size: 28px;
+    justify-items: center;
+    justify-content: center;
+}
+.accordion-button,
+.accordion-body {
+  font-size: 20px;
+}
+}
+  

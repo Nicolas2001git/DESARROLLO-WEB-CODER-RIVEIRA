@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <nav>
+            <ul class="grid-enlaces-header-todos">
+                <!-- Enlaces de navegación -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyecto.html">Proyectos</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <!-- Titulo -->
+        <h1>Contacto</h1>
+        <!-- Texto -->
+        <p> Este es nuestro número de contacto: <a class="telefono" href="tel:+5491134567890">+54 9 11 3456 7890</a> </p> 
+        <p>El uso de este número es exclusivamente para la confirmación de proyectos y diseños, y está destinado a clientes recurrentes.</p>
+        <p>Cualquier duda que tengas, envíanos un mensaje y te responderemos a la brevedad.</p>
+        <p>Nuestro horario de atención y respuesta es de 10:00 a 21:00 hs, todos los días.</p>
+        <!-- Formulario de contacto -->
+        <form class="el-formulario"  action="/submit" method="post">
+            <!-- Campo para ingresar el nombre -->
+             <div>
+                <label class="formulario" for="nombre">Nombre:</label>
+                <input class="formulario" type="text" id="nombre" name="nombre" placeholder="nombre">
+            </div>
+            <!-- Selector para elegir el tipo de usuario -->
+            <div class="tipo-de-usuario">
+                <label for="tipo-de-usuario">Tipo de usuario</label>
+                <select class="opciones" name="tipo-de-usuario" id="tipo-de-usuario">
+                    <option class="opciones" value="empresa">Empresa</option>
+                    <option class="opciones" value="individuo">Individuo</option>
+                </select>
+            </div>
+            <div>
+            <!-- Campo para ingresar el correo electrónico -->
+                <label class="formulario" for="email">Correo Electrónico:</label>
+                <input class="formulario" type="email" id="email" name="email" placeholder="email">
+            </div>
+            <div>
+            <!-- Campo de texto para el mensaje -->
+                <label class="mensaje"  for="mensaje">Mensaje:</label>
+                <textarea class="formulario" id="mensaje" name="mensaje" placeholder="escribe tu mensaje"></textarea>
+            </div>
+            <div>
+            <!-- Botón para enviar el formulario -->
+                <button class="boton-enviar"  type="submit" id="enviar">Enviar</button>
+            </div>
+        </form>
+        <p>Si preferís escribirnos, también podés enviarnos un correo a <a class="mail" href="https://workspace.google.com/intl/es-419_ar/gmail/">contactowebcreators@gmail.com</a>.</p>
+        
+        <!-- Botón para suscribirse -->
+        <div class="suscripción">
+            <label class="suscribirse" for="suscribe">📩 Deseo recibir novedades</label>
+            <input type="checkbox" name="suscribe" id="suscribe">
+        </div>
+    </main>
+    <!-- Pie de página con enlaces a redes sociales -->
+    <footer>
+        <div>
+            <p>Nos podes encontrar en las redes</p>
+            <a href="https://www.instagram.com/"><img src="../IMG/instagram Logo.png" alt="Ig logo"></a>
+            <a href="https://x.com/?lang=es"><img src="../IMG/x logo.png" alt="Twitter Logo"></a>
+            <a href="https://www.tiktok.com/es/"><img src="../IMG/tiktok Logo.png" alt="Tiktok Logo"></a>
+            <a href="https://www.youtube.com/"><img src="../IMG/youtube Logo.png" alt="YT Logo"></a>
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="../IMG/facebook Logo.png" alt="Facebook Logo"></a>
+        </div>
+        <p>2025 DevApps. Estamos para servirte.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
