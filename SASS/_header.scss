@@ -1,0 +1,35 @@
+@use 'variables' as *; 
+.grid-enlaces-header-todos {
+  background-color: variables.$color-fondo;
+  padding: 20px 0;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  animation: despertar-suave 1s ease-out both;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 20px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  li {
+    a {
+      display: block;
+      padding: 10px 20px;
+      background-color: white;
+      color: brown;
+      border: 3px solid gray;
+      border-radius: 1000px;
+      text-decoration: none;
+      font-size: 32px;
+      transition: all 0.3s ease;
+      animation: expansion-texto 0.7s ease-out both;
+
+      &:hover {
+        background-color: violet;
+        color: white;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

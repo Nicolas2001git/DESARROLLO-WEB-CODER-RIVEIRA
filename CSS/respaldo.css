@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@charset "UTF-8";
 *{
     padding: 0;
     margin: 0;
@@ -11,7 +12,7 @@
   padding: 20px 0;
   font-family: "Caveat", cursive;
   text-align: center;
-  animation: despertar-suave 1s ease-out both;
+  animation: entrada-rodada-izquierda 1s ease-out both;
   display: grid;
   grid-template-columns: repeat(4, auto);
   column-gap: 20px;
@@ -163,8 +164,6 @@ main .suscribirse {
 
 .imagen-1:hover, .imagen-2:hover, .imagen-3:hover, .imagen-4:hover{
     border: 5px solid blue; 
-    transform: scale(1.01);
-    
 }
 .proyecto-videos{
     display: grid;
@@ -185,7 +184,6 @@ main .suscribirse {
 .video-1:hover,
 .video-2:hover {
   border: 5px solid blue; 
-  transform: scale(1.01);
 }
 .video-1 {
     grid-area: video-1;
@@ -394,7 +392,6 @@ h2{
 }
 .servicio-1:hover,.servicio-2:hover,.servicio-3:hover,.servicio-4:hover{
     color: #1d4ed8;
-    transform: scale(1.03);
 } 
 /* Estilo para preguntas frecuentes */
 .accordion-header {
@@ -441,147 +438,132 @@ video{
 
 /* ESTILOS PARA CELULAR 768 PX*/
 @media (max-width: 576px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  h2,
-  .formulario,
-  .mensaje,
-  .tipo-de-usuario,
-  .opciones {
-    font-size: 40px;
-  }
-
-.suscripción .suscribirse {
-  font-size: 30px;
+h1 {
+  font-size: 36px;
 }
-  p {
-    font-size: 30px;
-    padding: 10px 10px;
-  }
-
-  .telefono{
-    font-size: 32px; 
-  }
-  .mail{
-    font-size: 25px;
-  }
-
-  .grid-enlaces-header-todos {
+  
+h2,
+.formulario,
+.mensaje,
+.tipo-de-usuario,
+.opciones,
+.suscribirse {
+  font-size: 22px;
+}
+  
+p {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+  
+.grid-enlaces-header-todos {
     grid-template-columns: 1fr;
     row-gap: 10px;
     padding: 10px;
-  }
-
-  .grid-enlaces-header-todos li a {
-    font-size: 24px;
+}
+  
+.grid-enlaces-header-todos li a {
+    font-size: 22px;
     padding: 8px;
-    align-items: center;
-    justify-content: center;
+    align-items: center;     
+    justify-content: center; 
     margin: 0px;
-  }
+}
 
-  .web-creator {
+.web-creator{
     width: 300px;
     height: 300px;
-  }
-
-  .testimonio-1,
-  .testimonio-2 {
+}
+  
+.testimonio-1,
+.testimonio-2 {
     flex-direction: column;
     width: 90%;
     height: auto;
     font-size: 24px;
     margin: 10px auto;
     text-align: center;
-  }
-
-  .proyecto-imagenes {
+}
+  
+.proyecto-imagenes {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "imagen-1"
-      "imagen-2"
-      "imagen-3"
-      "imagen-4";
-  }
-
-  .proyecto-imagenes img {
+    "imagen-1"
+    "imagen-2"
+    "imagen-3"
+    "imagen-4";
+}
+  
+.proyecto-imagenes img {
     width: 90%;
     height: auto;
     margin: auto;
-  }
-
-  .proyecto-videos {
+}
+.proyecto-videos {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "video-1"
-      "video-2";
-  }
-
-  .proyecto-videos video {
-    width: 90%;
-    margin: auto;
-  }
-
-  .servicios-columnas {
+    "video-1"
+    "video-2";
+}
+.proyecto-videos video {
+  width: 90%;
+  margin: auto;
+}
+.servicios-columnas {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "servicio-1"
-      "servicio-2"
-      "servicio-3"
-      "servicio-4";
-  }
-
-  .servicio-1,
-  .servicio-2,
-  .servicio-3,
-  .servicio-4 {
+    "servicio-1"
+    "servicio-2"
+    "servicio-3"
+    "servicio-4";
+}
+.servicio-1,
+.servicio-2,
+.servicio-3,
+.servicio-4 {
     font-size: 24px;
-    padding: 10px;
-  }
-
-  .boton-enviar {
+    padding: 10px;   
+}
+.boton-enviar {
     font-size: 22px;
     width: 100%;
-  }
-
-  input,
-  textarea,
-  select {
+}
+.telefono{
+    font-size: 20px;
+}
+.mail{
+    font-size: 20px;
+}
+input,    
+textarea,
+select {
     width: 93%;
-    font-size: 24px;
-  }
-
-  footer {
-    font-size: 24px;
-    padding: 20px;
-  }
-
-  footer img {
-    width: 30px;
-  }
-
-  footer img:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-  }
-
-  .equipo-trabajando {
+    font-size: 19px;
+}
+footer {
+  font-size: 20px;
+  padding: 20px;
+}
+footer img {
+  width: 30px;
+}
+footer img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.equipo-trabajando{
     width: 300px;
     height: 300px;
-  }
-
-  .preguntas {
+}
+.preguntas{
     font-size: 28px;
     justify-items: center;
     justify-content: center;
-  }
-
-  .accordion-button,
-  .accordion-body {
-    font-size: 20px;
-  }
+}
+.accordion-button,
+.accordion-body {
+  font-size: 20px;
+}
 }
 
 
@@ -653,6 +635,3 @@ video{
     transform: translateY(0);
   }
 }
-
-
-/*# sourceMappingURL=details.css.map */

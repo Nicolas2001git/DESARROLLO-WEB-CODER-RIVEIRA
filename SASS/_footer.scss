@@ -1,0 +1,17 @@
+@use './variables';
+footer {
+  background-color: variables.$color-fondo;
+  color: brown;
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Caveat", cursive;
+  img {
+    width: 40px;
+    margin: 0 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease; 
+    &:hover {
+      transform: scale(1.2); 
+    }
+  }
+}

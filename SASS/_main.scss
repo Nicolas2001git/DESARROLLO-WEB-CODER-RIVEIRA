@@ -1,0 +1,44 @@
+main {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  h1 {
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    transition: all 0.4s ease;
+    &:hover {
+      color: #5b3b2b;
+      opacity: 0.85;
+    }
+  }
+  p {
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    animation: despertar-suave 0.6s ease-out both;
+    margin-bottom: 20px;
+  }
+  .suscripción {
+    &:hover {
+      color: #1d4ed8;
+    }
+
+    &:focus-within label {
+      color: #1d4ed8;
+      font-weight: bold;
+    }
+  }
+  .suscribirse {
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+  }
+}
