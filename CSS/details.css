@@ -37,7 +37,6 @@
   transform: scale(1.2);
 }
 /* Estilos de main */
-/* Estilos de main */
 main {
   margin-bottom: 30px;
   text-align: center;
@@ -88,6 +87,18 @@ main .suscribirse {
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
+/* Estilo para foto de equipo */
+.equipo-trabajando {
+  margin-top: 10px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 40%;
+  margin-bottom: 10px;
+  }
+  .equipo-trabajando:hover{
+      transform: scale(1.1);
+      border: 5px double violet;
+    }
 /* Estilo para testimonios */
 .testimonio-1 {
     display: flex;
@@ -263,21 +274,18 @@ p:hover::first-letter {
   border-radius: 6px;
   cursor: pointer;
 }
-
 .boton-novedades:checked {
   background-color: #1d4ed8;
-  border-color: #1d4ed8;
 }
 .boton-novedades:checked::after {
   content: "✔";
   color: white;
   font-size: 20px;
   position: absolute;
-  left: 5px;
-  right: 2px;
-  top: 2px;
+  left: 2px;
+  right: 10px;
+  top: 1px;
 }
-
 .telefono{
     font-family: 'Courier New', Courier, monospace;
     font-size: 700px;
@@ -294,7 +302,6 @@ p:hover::first-letter {
     font-size: 40px;
     color:  #475569;
 }
-
 .mail:hover{
   color: #1d4ed8;
 }
@@ -473,19 +480,18 @@ footer img {
   transition: transform 0.3s ease;
 }
 footer img:hover {
-  transform: scale(1.2);
+  transform: scale(1.7);
 }
 /* Estilo para video */
 video{
     margin-top: 20px;
 }
 
-/* ESTILOS PARA CELULAR 768 PX*/
+/* ESTILOS PARA CELULAR 576 PX*/
 @media (max-width: 576px) {
-  h1 {
-    font-size: 28px;
+  main h1 {
+    font-size: 50px;
   }
-
   h2,
   .formulario,
   .mensaje,
@@ -618,7 +624,12 @@ video{
   .equipo-trabajando {
     width: 300px;
     height: 300px;
+    border-radius: 40%;
   }
+  .equipo-trabajando:hover{
+      transform: scale(1.1);
+      border: 5px dashed blueviolet;
+    }
 
   .preguntas {
     font-size: 28px;
