@@ -386,12 +386,11 @@ h2 {
 }
 h2::first-letter {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 100px;
+   font-size: 100px;
 }
 h2:hover::first-letter {
   color: #5b3b2b;
 }
-
 /* Estilo para lista de servicios*/
 .servicios-columnas{
     font-family: "Caveat", cursive;
@@ -436,7 +435,6 @@ h2:hover::first-letter {
     border:5px solid #2563eb;
 
 }
-
 .servicio-1:hover,.servicio-2:hover,.servicio-3:hover,.servicio-4:hover{
   color: #1d4ed8;
   transform: scale(1.03);
@@ -450,7 +448,6 @@ h2:hover::first-letter {
     text-align: center;
     font-size: 50px;
 }
-
 .accordion-button,
 .accordion-body {
     font-family: "Caveat", cursive;
@@ -486,7 +483,7 @@ video{
 /* ESTILOS PARA CELULAR 768 PX*/
 @media (max-width: 576px) {
   h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   h2,
@@ -494,30 +491,39 @@ video{
   .mensaje,
   .tipo-de-usuario,
   .opciones {
-    font-size: 40px;
-  }
-
-.suscripción .suscribirse {
-  font-size: 30px;
-}
-  p {
     font-size: 30px;
-    padding: 10px 10px;
   }
-
+  .suscripción .suscribirse {
+    font-size: 30px;
+  }
+  .boton-novedades {
+    width: 24px;
+    height: 24px;
+  }
+  .boton-novedades:checked::after {
+    font-size: 16px;
+    left: 0px;
+    top: 0;
+    right: 5px;
+  }
   .telefono{
     font-size: 32px; 
   }
   .mail{
     font-size: 25px;
   }
-
+  main p{
+    font-size: 35px;
+    padding: 10px 10px;
+  }
+  footer p{
+    font-size: 35px;
+  }
   .grid-enlaces-header-todos {
     grid-template-columns: 1fr;
     row-gap: 10px;
     padding: 10px;
   }
-
   .grid-enlaces-header-todos li a {
     font-size: 24px;
     padding: 8px;
@@ -525,12 +531,10 @@ video{
     justify-content: center;
     margin: 0px;
   }
-
   .web-creator {
     width: 300px;
     height: 300px;
   }
-
   .testimonio-1,
   .testimonio-2 {
     flex-direction: column;
@@ -627,7 +631,6 @@ video{
     font-size: 20px;
   }
 }
-
 
 /* Animaciones */
 @keyframes rotar {
