@@ -1,0 +1,11 @@
+@use 'mixins' as *;
+main h1 {
+  @include estilo-titulos(80px, 700);
+  color: black;
+  background-color: white;
+  transition: all 0.4s ease;
+}
+h2 {
+  @include estilo-titulos(65px,500);
+  list-style: none;
+}

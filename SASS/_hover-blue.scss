@@ -1,0 +1,75 @@
+@use './variables' as *;
+
+// Main
+main .suscripción:hover {
+  color: $hover-blue;
+}
+main .suscripción:focus-within label {
+  color: $hover-blue;
+  font-weight: bold;
+}
+// Logo
+.web-creator:hover {
+  outline: 5px dashed $hover-blue;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+// Testimonios
+.testimonio-1:hover, .testimonio-2:hover {
+  background-color: #e1dcd8;
+  border-color: #3b2c2a;
+  color: $hover-blue;
+}
+// Imágenes
+.imagen-1:hover, .imagen-2:hover, .imagen-3:hover, .imagen-4:hover {
+  border: 5px solid $hover-blue;
+  transform: scale(1.01);
+}
+// Videos
+.video-1:hover, .video-2:hover {
+  border: 5px solid $hover-blue;
+  transform: scale(1.01);
+}
+// Teléfono y mail
+.telefono:hover {
+  color: $hover-blue;
+}
+.mail:hover {
+  color: $hover-blue;
+}
+// Formulario
+.el-formulario div:hover label {
+  color: $hover-blue;
+  text-decoration: underline;
+}
+// Botón de novedades
+.boton-novedades:checked {
+  background-color: $hover-blue;
+  border-color: $hover-blue;
+}
+.boton-novedades:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  right: 2px;
+  top: 2px;
+}
+// Botón enviar
+.boton-enviar:hover {
+  color: $hover-blue;
+  animation: expansion-texto 0.7s ease-out both;
+}
+
+.boton-enviar:focus {
+  background: #f0f8ff;
+  color: #333;
+  box-shadow: 0 0 8px rgba($hover-blue, 0.8);
+}
+
+// Servicios
+.servicio-1:hover, .servicio-2:hover, .servicio-3:hover, .servicio-4:hover {
+  color: $hover-blue;
+  transform: scale(1.03);
+}

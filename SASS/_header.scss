@@ -1,4 +1,4 @@
-@use 'variables' as *; 
+@use './variables';
 .grid-enlaces-header-todos {
   background-color: variables.$color-fondo;
   padding: 20px 0;
