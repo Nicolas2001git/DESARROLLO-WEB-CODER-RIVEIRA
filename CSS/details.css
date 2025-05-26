@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+
+/*# sourceMappingURL=details.css.map */
 *{
     padding: 0;
     margin: 0;
@@ -711,6 +714,3 @@ video{
     transform: translateY(0);
   }
 }
-
-
-/*# sourceMappingURL=details.css.map */
