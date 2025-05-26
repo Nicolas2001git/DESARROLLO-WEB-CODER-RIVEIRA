@@ -241,7 +241,7 @@ p{
     text-align: center;
 }
 p::first-letter {
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 100px;
 }
 p:hover::first-letter {
