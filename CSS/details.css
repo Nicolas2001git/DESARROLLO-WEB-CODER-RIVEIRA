@@ -136,12 +136,12 @@ main .suscribirse {
     width: 900px;
     height: 150px;
     margin: 20px 20px 20px auto;
-  
 }
 .testimonio-1:hover, .testimonio-2:hover{
   background-color: #e1dcd8; 
   border-color: #3b2c2a; 
   color: #1d4ed8;
+  animation: vibrar 0.3s linear infinite both;
 }
 .proyecto-imagenes {
     display: grid;
@@ -712,5 +712,31 @@ video{
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes vibrar {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
