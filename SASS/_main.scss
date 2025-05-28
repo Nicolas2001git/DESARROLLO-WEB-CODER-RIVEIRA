@@ -4,7 +4,7 @@ main {
   text-align: center;
   font-family: "Caveat", cursive;
   h1 {
-    @include estilo-titulos(80px, 700);
+    @include estilo-titulos(48px, 700);
     color: black;
     background-color: white;
     transition: all 0.4s ease;
@@ -14,7 +14,7 @@ main {
     }
   }
   p {
-    @include estilo-titulos(60px, 600);
+    @include estilo-titulos(36px, 600);
     animation: despertar-suave 0.6s ease-out both;
     margin-bottom: 20px;
   }
@@ -28,6 +28,6 @@ main {
     }
   }
   .suscribirse {
-    @include estilo-titulos(60px, 700);
+    @include estilo-titulos(32px, 700);
   }
 }

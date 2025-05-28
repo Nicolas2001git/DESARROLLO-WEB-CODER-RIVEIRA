@@ -9,54 +9,8 @@
     transform: scale(1) rotate(360deg);
   }
 }
-
 .rotar-animacion {
   animation: rotar 0.65s linear both;
-}
-
-
-@keyframes entrada-rodada-izquierda {
-  0% {
-    transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-.entrada-rodada-izquierda {
-  animation: entrada-rodada-izquierda 0.8s ease-out both;
-}
-
-@keyframes entrada-rodada-derecha {
-  0% {
-    transform: translateX(800px) rotate(540deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-.entrada-rodada-derecha {
-  animation: entrada-rodada-derecha 0.8s ease-out both;
-}
-
-@keyframes expansion-texto {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
 }
 
 @keyframes despertar-suave {
