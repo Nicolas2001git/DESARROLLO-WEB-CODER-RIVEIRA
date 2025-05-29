@@ -142,63 +142,19 @@ main .suscribirse {
   color: #1d4ed8;
   animation: vibrar 0.3s linear infinite both;
 }
-.proyecto-imagenes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "imagen-1 imagen-2"
-        "imagen-3 imagen-4";
-    gap: 10px;
-    margin-bottom: 30px;
-}
-.proyecto-imagenes img {
-    border: 5px solid #501a1a;
-    border-radius: 100px;
-    width: 700px;
-    height: 700px;
-    margin-left: 5px;
-}
-.imagen-1 {
-    grid-area: imagen-1;
-}
-.imagen-2 {
-    grid-area: imagen-2;
-}
-.imagen-3 {
-    grid-area: imagen-3;
-}
-.imagen-4 {
-    grid-area: imagen-4;
+/* Carrousel de imagenes */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333; 
+  border-radius: 50%;
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  height: 3rem;
 }
 
-.imagen-1:hover, .imagen-2:hover, .imagen-3:hover, .imagen-4:hover{
-  border: 5px solid #1d4ed8; 
-  transform: scale(1.01);
-}
-.proyecto-videos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "video-1 video-2";
-    gap: 10px;
-}
-.proyecto-videos video{
-    border-radius: 50px;
-    border: 5px solid #501a1a;
-    border-radius: 100px;
-    background-color: #f5f7fa;
-}
-.video-1:hover,
-.video-2:hover {
-  border: 5px solid #1d4ed8; 
-  transform: scale(1.01);
-}
-.video-1 {
-    grid-area: video-1;
-}
-.video-2 {
-    grid-area: video-2;
-}
+
 /* Estilo general de listas <ul> */
 ul{
     display: flex;
