@@ -1,9 +1,16 @@
 @charset "UTF-8";
 /*# sourceMappingURL=details.css.map */
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Estilo del header */
+header {
+  position: sticky;
+  z-index: 1000;
+  background-color: rgba(159, 156, 156, 0.992); 
+  top: 0;
 }
 /* Estilo para los enlaces en lista */
 .grid-enlaces-header-todos {
@@ -88,53 +95,89 @@ main .suscribirse {
   outline: 7px dashed #1d4ed8;
   transform: scale(1.02);
   transition: transform 0.3s ease; 
+  
+}
+.web-creator-carta {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.titulo-carta {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 36px;
+  text-align: center;
+}
+.titulo-carta:hover {
+  border-color: #3b2c2a; 
+  color: #1d4ed8;
+  animation: vibrar 0.3s linear infinite both;
+}
+.descuentos {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 36px;
+  text-align: center;
+  color: red;
+  display: inline-block; 
+  padding: 5px 10px;
+}
+.descuentos:hover {
+  color: #1d4ed8;
+  animation: vibrar 0.3s linear infinite both;
 }
 /* Estilo para foto de equipo */
 .equipo-trabajando {
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 1000px;
   height: 1000px;
   border-radius: 40%;
-  margin-bottom: 10px;
 }
 .equipo-trabajando:hover{
-    transform: scale(1.1);
-    border: 5px double violet;
+  transform: scale(1.1);
+  border: 5px double violet;
 }
 /* Estilo para testimonios */
 .testimonio-1 {
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px 30px;
-    background-color: #f4f1ee; 
-    color: #3b2c2a; 
-    text-align: end;
-    border: 3px solid #a25633; 
-    border-top-left-radius: 500px;
-    border-bottom-left-radius: 1000px;
-    border-top-right-radius: 800px;
-    border-bottom-right-radius: 800px ;
-    font-size: 40px;
-    font-family: "Caveat", cursive;
-    width: 900px;
-    height: 150px;
-    margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 30px;
+  background-color: #f4f1ee; 
+  color: #3b2c2a; 
+  text-align: end;
+  border: 3px solid #a25633; 
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 1000px;
+  border-top-right-radius: 800px;
+  border-bottom-right-radius: 800px ;
+  font-size: 40px;
+  font-family: "Caveat", cursive;
+  width: 900px;
+  height: 150px;
+  margin: 20px;
 }
 .testimonio-2{
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 30px;
-    background-color: #f4f1ee; 
-    color: #3b2c2a; 
-    text-align: center;
-    border: 3px solid rgb(162, 49, 49); 
-    border-top-left-radius: 500px;
-    border-bottom-left-radius: 600px;
-    font-size: 40px;
-    font-family: "Caveat", cursive;
-    width: 900px;
-    height: 150px;
-    margin: 20px 20px 20px auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  background-color: #f4f1ee; 
+  color: #3b2c2a; 
+  text-align: center;
+  border: 3px solid rgb(162, 49, 49); 
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 600px;
+  font-size: 40px;
+  font-family: "Caveat", cursive;
+  width: 900px;
+  height: 150px;
+  margin: 20px 20px 20px auto;
 }
 .testimonio-1:hover, .testimonio-2:hover{
   background-color: #e1dcd8; 
@@ -153,48 +196,46 @@ main .suscribirse {
   width: 3rem;
   height: 3rem;
 }
-
-
 /* Estilo general de listas <ul> */
 ul{
-    display: flex;
-    list-style: none; /* Elimina las viñetas/círculos */
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 52px;
-    background-color: #9f9c9cfd;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  list-style: none; /* Elimina las viñetas/círculos */
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 52px;
+  background-color: #9f9c9cfd;
+  justify-content: center;
+  align-items: center;
 }
 /* Estilo de los enlaces */
 a{
-    text-decoration: none; /* Elimina subrayado */
-    color: brown;
+  text-decoration: none; /* Elimina subrayado */
+  color: brown;
 }
 
 /* Estilo para los enlaces dentro de listas */
 li a{
-    display: flex;
-    flex-direction: row; /* Elementos en fila */
-    justify-content: space-between;
-    align-items: center; 
-    margin-left: 100px;
-    animation: expansion-texto 0.7s ease-out both;
+  display: flex;
+  flex-direction: row; /* Elementos en fila */
+  justify-content: space-between;
+  align-items: center; 
+  margin-left: 100px;
+  animation: expansion-texto 0.7s ease-out both;
 }
 /* Estilo de los párrafos */
 p{
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 32px;
-    font-style: normal;
-    text-align: center;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  text-align: center;
 }
 p::first-letter {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 100px;
+  font-size: 44px;
 }
 p:hover::first-letter {
   color: #5b3b2b;
@@ -242,18 +283,18 @@ p:hover::first-letter {
 }
 /* Estilo telefono */
 .telefono{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    color:  #475569;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color:  #475569;
 }
 .telefono:hover{
   color: #1d4ed8;
 }
 /* Estilo mail */
 .mail{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    color:  #475569;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color:  #475569;
 }
 .mail:hover{
   color: #1d4ed8;
@@ -270,62 +311,62 @@ p:hover::first-letter {
   text-decoration: underline;
 }  
 .formulario{
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 32px;
-    font-style: normal; 
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal; 
 }
 input, textarea, select {
-    font-size: 32px;
-    border: 5px ridge rgba(17, 14, 18, 0.6);
-    outline: none;
-    padding: 5px;  
-    margin-top: 10px;
+  font-size: 32px;
+  border: 5px ridge rgba(17, 14, 18, 0.6);
+  outline: none;
+  padding: 5px;  
+  margin-top: 10px;
 }
 .formulario:focus{
-    background: #f0f8ff;  
-    color: #333;       
+  background: #f0f8ff;  
+  color: #333;       
 }   
 .mensaje{
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 32px;
-    font-style: normal;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
 }
 .mensaje:focus{
-    background: #f0f8ff;  
-    color: #333;         
+  background: #f0f8ff;  
+  color: #333;         
 }
 .tipo-de-usuario{
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 32px;
-    font-style: normal;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
 }
 .opciones{
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 32px;
-    font-style: normal;
-    border: 5px ridge rgba(17, 14, 18, 0.6);
-    outline: none; 
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  border: 5px ridge rgba(17, 14, 18, 0.6);
+  outline: none; 
 }
 .opciones:focus{
-    background: #f0f8ff;  
-    color: #333;        
+  background: #f0f8ff;  
+  color: #333;        
 }
 .boton-enviar {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 32px;
-    width: 150px;
-    border: 10px ridge rgba(170, 50, 220, 0.6);
-    outline: none; 
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 32px;
+  width: 150px;
+  border: 10px ridge rgba(170, 50, 220, 0.6);
+  outline: none; 
 }
 .boton-enviar:hover {
   color: #1d4ed8;
@@ -336,40 +377,41 @@ input, textarea, select {
   color: #333;
   box-shadow: 0 0 8px rgba(29, 78, 216, 0.8);
 }
+
 /* Estilo para subtítulo */
 h2 {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 650;
+  font-size: 42px;
   text-align: center;
   list-style: none;
 }
 h2::first-letter {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 100px;
+   font-size: 44px;
 }
 h2:hover::first-letter {
   color: #5b3b2b;
 }
 /* Estilo para lista de servicios*/
 .servicios-columnas{
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 40px;
-    font-style: normal;
-    text-align: center;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "servicio-1 servicio-2"
-    "servicio-3 servicio-4";
-    gap: 20px;
-    border: 5px solid #2563eb;
-    animation:despertar-suave 0.6s ease-out both;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: normal;
+  text-align: center;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "servicio-1 servicio-2"
+  "servicio-3 servicio-4";
+  gap: 20px;
+  border: 5px solid #2563eb;
+  animation:despertar-suave 0.6s ease-out both;
 }
 .servicios-columnas div::first-letter {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -377,24 +419,24 @@ h2:hover::first-letter {
   font-weight: bold;
 }
 .servicio-1 {
-    grid-area: servicio-1;
-    background-color: #f5f7fa;
-    border: 5px solid #2563eb;
+  grid-area: servicio-1;
+  background-color: #f5f7fa;
+  border: 5px solid #2563eb;
 }
 .servicio-2 {
-    grid-area: servicio-2;
-    background-color: #f5f7fa;
-    border: 5px solid #2563eb;
+  grid-area: servicio-2;
+  background-color: #f5f7fa;
+  border: 5px solid #2563eb;
 }
 .servicio-3 {
-    grid-area: servicio-3;
-    background-color: #f5f7fa;
-    border: 5px solid #2563eb;
+  grid-area: servicio-3;
+  background-color: #f5f7fa;
+  border: 5px solid #2563eb;
 }
 .servicio-4{
-    grid-area: servicio-4;
-    background-color: #f5f7fa;
-    border:5px solid #2563eb;
+  grid-area: servicio-4;
+  background-color: #f5f7fa;
+  border:5px solid #2563eb;
 
 }
 .servicio-1:hover,.servicio-2:hover,.servicio-3:hover,.servicio-4:hover{
@@ -403,21 +445,21 @@ h2:hover::first-letter {
 }
 /* Estilo para preguntas frecuentes */
 .accordion-header {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    font-size: 36px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 36px;
 }
 .accordion-button,
 .accordion-body {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    font-size: 32px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 32px;
 }
 /* Estilo del pie de página */
 footer {
@@ -447,7 +489,7 @@ video{
 /* ESTILOS PARA CELULAR 576 PX*/
 @media (max-width: 576px) {
   main h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
   h2,
   .formulario,
@@ -615,7 +657,6 @@ video{
 .rotar-animacion {
   animation: rotar 0.65s linear both;
 }
-
 @keyframes expansion-texto {
   0% {
     letter-spacing: -0.5em;

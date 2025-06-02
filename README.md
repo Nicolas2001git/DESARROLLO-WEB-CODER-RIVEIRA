@@ -11,4 +11,4 @@ Este proyecto consiste en una página web estática que incluye:
 - Estilos personalizados con CSS.
 - Elementos visuales como imágenes, botones y enlaces.
 - Un diseño adaptable a diferentes dispositivos.
-🛠️ Seguime para ver cómo sigo avanzando en mi formación como desarrollador/a web 🚀
+🛠️ Seguime para ver cómo sigo avanzando en mi formación como desarrollador web 🚀
